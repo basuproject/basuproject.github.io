@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #6b8bbb; */
+    background-image: url("../images/engineer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-dark {
+    background-color: #d6cd52;
+}
+
+.text {
+    background-color: #D9CE3F;
+    margin: auto;
+    width: 80%;
+    margin-top: 15px;
+    padding: 2.5vh;
+    border-radius: 25px;
+}
+
+.header {
+    color: #000;
+    text-align: center;
+}
+
+.paragraph {
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.zone {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    padding-top: 10vh;
+    height: 200px;
+    /* border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%; */
+    border-radius: 100%;
+    background-color: #E83A14;
+}
+
+.item {
+    width: 80%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5vh;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    color: #000;
+    background-color: #D9CE3F;
+}

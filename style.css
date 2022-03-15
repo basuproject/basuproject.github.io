@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6466fa;
+}
+
+.header {
+    background-color: rgb(53, 53, 53);
+    height: 100vh;
+}
+
+.videobox {
+    width: 100%;
+    height: 100%;
+}
+
+.videobox video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+.list li {
+    padding-left: 1.5rem;
+}
+
+.list li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    transition: all 0.8s;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.list li a:hover {
+    color: rgb(25, 29, 29);
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+li ul li {
+    display: block;
+    transition-duration: 0.5s;
+}
+
+li ul li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    /* margin-top: 0.5rem; */
+    line-height: 2.5rem;
+    left: auto;
+    display: none;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.starter-texts {
+    top: 30%;
+    position: absolute;
+    width: 40%;
+    right: 8vh;
+}
+
+.title {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.paragraph {
+    color: #ffffff;
+    font-size: 30px;
+    width: 500px;
+    margin-bottom: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: rgba(25, 28, 226, 0.6);
+    font-weight: bold;
+    font-size: 1.3rem;
+    height: 54px;
+    width: 140px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.word {
+    color: rgb(94, 252, 63);
+}
+
+
+/* ------------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------------ */
